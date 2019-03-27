@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Modal from "react-responsive-modal";
-// import "./styles.scss";
+import "./styles.scss";
 import {IEmpty} from "../../common/IEmpty";
 import {EventNames, eventRegister} from "../../common/eventRegister";
 

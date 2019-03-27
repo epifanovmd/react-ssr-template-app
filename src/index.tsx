@@ -1,19 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {Provider} from "react-redux";
-import {Router} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import {store} from "./store/store";
-import {createBrowserHistory} from "history";
 import {Routes} from "./App";
-// import "./assets/clearfix.scss";
+import "./assets/clearfix.scss";
 
 const root = (
   <Provider store={store}>
-    <>
-      <Router history={createBrowserHistory()}>
+      <BrowserRouter>
         <Routes/>
-      </Router>
-    </>
+      </BrowserRouter>
   </Provider>
 );
 

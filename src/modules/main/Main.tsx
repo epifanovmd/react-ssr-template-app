@@ -3,7 +3,6 @@ import {mainSelector} from "./mainSelector";
 import {connect} from "react-redux";
 import {LoadState} from "../../common/loadState";
 import {MainComponent} from "../../components/mainComponent/mainComponent";
-// import "../../assets/clearfix.scss";
 import {Users} from "../../api/dto/Users.g";
 
 export interface IMainPageStateProps {

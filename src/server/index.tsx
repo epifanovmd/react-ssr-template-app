@@ -25,12 +25,12 @@ app.get("*", (req, res) => {
   <!DOCTYPE html>
   <html>
   <head>
-    <title>SSR with RR</title>
-    <script src="/bundle.js" defer></script>
+    <title>SSR with RRR</title>
   </head>
 
   <body>
-  <div id="app">${markup}</div>
+  <div id="root">${markup}</div>
+  <script src="/bundle.js"></script>
   </body>
   </html>
 `);
