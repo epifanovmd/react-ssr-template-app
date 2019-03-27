@@ -34,13 +34,13 @@ const handleRender = (req: any, res: any): void => {
     </Provider>);
 
   // Grab the initial state from our Redux store
-  const preLoadedState = store.getState();
+  const preloadedState = store.getState();
 
   // Send the rendered page back to the client
-  res.send(renderFullPage(html, preLoadedState));
+  res.send(renderFullPage(html, preloadedState));
 };
 
-const renderFullPage = (html: string, preLoadedState: IAppState): string => {
+const renderFullPage = (html: string, preloadedState: IAppState): string => {
   return `
     <!doctype html>
     <html>
@@ -50,7 +50,7 @@ const renderFullPage = (html: string, preLoadedState: IAppState): string => {
       <body>
         <div id="root">${html}</div>
         <script>
-          window.__PRELOADED_STATE__ = ${JSON.stringify(preLoadedState).replace(/</g, "\\u003c")}
+          window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, "\\u003c")}
         </script>
         <script src="/bundle.js"></script>
       </body>
