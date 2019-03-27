@@ -17,7 +17,7 @@ const root = (
   </Provider>
 );
 
-ReactDOM.render(
+ReactDOM.hydrate(
   root,
   document.getElementById("root"),
 );
