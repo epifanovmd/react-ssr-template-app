@@ -9,7 +9,7 @@ export class UsersApiRequest extends BaseRequest {
 
   get(config?: Object): Promise<Users[]> {
     return this.fetch(
-      `/users`,
+      `https://jsonplaceholder.typicode.com/users`,
       Object.assign({
         method : "GET"
       }, config))

@@ -26,7 +26,7 @@ class MainStatic extends Component<TProps> {
 
     return (
       <>
-        <MainComponent/>
+        <MainComponent users={this.props.users}/>
       </>
     );
   }

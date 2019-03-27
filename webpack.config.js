@@ -16,6 +16,16 @@ const browserConfig = {
   module: {
     rules: [
        webpackConfig.baseLoaders.ts,
+      // {
+      //   test: /\.scss$/,
+      //   use: [
+      //     {
+      //       loader: "style-loader",
+      //     },
+      //     ...webpackConfig.baseLoaders.scss,
+      //   ],
+      // },
+      // webpackConfig.baseLoaders.file,
     ]
   },
   plugins: [
@@ -40,6 +50,16 @@ const serverConfig = {
   module: {
     rules: [
        webpackConfig.baseLoaders.ts,
+      // {
+      //   test: /\.scss$/,
+      //   use: [
+      //     {
+      //       loader: "style-loader",
+      //     },
+      //     ...webpackConfig.baseLoaders.scss,
+      //   ],
+      // },
+      // webpackConfig.baseLoaders.file,
     ]
   },
   plugins: [
