@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./styles.scss";
+import "./styles.css";
 
 export class TestComponent extends React.Component {
   public render(): JSX.Element {
