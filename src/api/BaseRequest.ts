@@ -1,5 +1,4 @@
 import {assertNotNull} from "../common/assertNotNull";
-import _ from "lodash";
 import {NoAuthError} from "../common/exceptionType";
 /*tslint:disable*/
 
@@ -29,7 +28,7 @@ export class BaseRequest {
 
     if (BaseRequest.getToken()) {
       headers.set("cookie", `access_token=${BaseRequest.token}`);
-    } else if (!_.isEmpty(document.cookie)) {
+    } else if (document.cookie) {
       headers.set("Cookie", document.cookie);
     }
     if (process.env.NODE_ENV === "development") {
